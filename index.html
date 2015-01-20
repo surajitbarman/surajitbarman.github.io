@@ -44,6 +44,12 @@ a:hover { color: #2a6496; text-decoration: underline; }
 
 .masthead-inner { display: none; }
 
+.content { padding: 21px 55px 21px 34px; font-size: 13px; line-height: 2; }
+
+.content .lead { color: #777; }
+
+.content p { margin-bottom: 21px; }
+
 .content .dr-surajit-barman { display: block; }
 
 .masthead h1 { font-size: 21px; }
@@ -53,6 +59,9 @@ a:hover { color: #2a6496; text-decoration: underline; }
 ul, ol { margin-left: 0; padding-left: 21px; }
 
 footer { display: block; }
+
+.visible-sm { display: block; }
+.hidden-sm { display: none; }
 }
 
 @media (min-width: 960px) {
@@ -62,6 +71,8 @@ footer { display: block; }
 
 .masthead-inner { padding: 10%; }
 
+.content { padding: 0 5%; line-height: 2; }
+
 .content .dr-surajit-barman { display: none; }
 
 .container { width: 65%; margin-left: 25%; }
@@ -69,11 +80,17 @@ footer { display: block; }
 .contents { list-style:none; padding-left:0; line-height: 2; }
 
 footer { display: none; }
+
+.hidden-sm { display: block; }
+.visible-sm { display: none; }
 }
 
-.content { padding: 0 5%; line-height: 2; }
-
 hr { border: none; outline: none; height: 1px; background-color: #c0c0c0; margin: 34px 0; }
+
+.head { padding: 13px 13px 13px 34px; }
+
+.head h1 { font-size: 13px; font-weight: bolder; padding: 0; margin: 3px 0 3px 0; }
+.head h2 { font-size: 10px; font-weight: 400; font-style: italic; padding: 0; margin: 0; }
 
 </style>
 
@@ -82,6 +99,10 @@ hr { border: none; outline: none; height: 1px; background-color: #c0c0c0; margin
 
 <!-- Masthead -->
 <header class="masthead">
+<div class="head visible-sm">
+<h1>Dr. Surajit Barman</h1>
+<h2>1985 to present</h2>
+</div>
 <div class="masthead-inner-wrapper">
 <div class="masthead-inner">
 <img src="assets/profile.jpg" class="avatar">
@@ -103,13 +124,14 @@ hr { border: none; outline: none; height: 1px; background-color: #c0c0c0; margin
 <!-- Masthead -->
 
 <!-- Content -->
-<div class="content container">
+<div class="content container" id="profile">
 <div class="row">
 
-<div class="col-lg-12 col-md-12 col-sm-12" id="profile">
-<h1 class="dr-surajit-barman"><a href=""><abbr>Dr.</abbr> Surajit Barman</a></h1>
-<h2>Profile</h2>
-<p><em><abbr>Dr.</abbr> Surajit Barman started his teaching career in Barama College, Barama in 1985 and then joined Tihu College, Tihu in 1988. He promoted to <strong>Associate Professor</strong> and till 30<sup>th</sup> November, 2014 he continued in Tihu College. On 1<sup>st</sup> December, 2014 he joined as <strong>Principal</strong> of North Kamrup College, Baghmara. He received his <strong><abbr>M. Phil.</abbr></strong> from Gauhati University, Guwahati and eventually earned his <strong><abbr>Ph. D.</abbr></strong> from North Eastern Hill University, Shillong.</em></p> 
+<div class="col-lg-12 col-md-12 col-sm-12">
+<h2 class="hidden-sm">Profile</h2>
+<p class="lead"><em><abbr>Dr.</abbr> Surajit Barman started his teaching career in Barama College, Barama in 1985 and then joined Tihu College, Tihu in 1988. He promoted to <strong>Associate Professor</strong> and till 30<sup>th</sup> November, 2014 he continued in Tihu College. On 1<sup>st</sup> December, 2014 he joined as <strong>Principal</strong> of North Kamrup College, Baghmara. He received his <strong><abbr>M. Phil.</abbr></strong> from Gauhati University, Guwahati and eventually earned his <strong><abbr>Ph. D.</abbr></strong> from North Eastern Hill University, Shillong.</em></p> 
+
+<hr class="visible-sm" style="width:34px;margin-left:-8px;">
 
 <p>Born in Bhojkuchi, a remote village in District of Nalbari, <abbr>Dr.</abbr> Barman has spent almost 28 years of his life as a teacher nurturing and educating his students to become lifelong learners. In this long term career, what he has experienced is that the role of the educators goes beyond transmitting knowledge— their role is to nurture their students to become lifelong learners— to teach them the skills of <em>how to learn</em> and to teach them <em>the appreciation</em> and <em>the love for knowledge</em>. His idea on teaching speaks about teaching as an exciting adventure in which both the teacher and the students participate and cooperate to achieve a common goal.</p>
 
@@ -121,6 +143,7 @@ hr { border: none; outline: none; height: 1px; background-color: #c0c0c0; margin
 
 <p>He is married with two sons and currently living in his private apartment along with his family in Tihu Town.</p>
 
+<div class="hidden-sm">
 <hr id="research">
 
 <h2>Research</h2>
@@ -296,6 +319,7 @@ hr { border: none; outline: none; height: 1px; background-color: #c0c0c0; margin
 <small>Copyright © 2015 <abbr>Dr.</abbr> Surajit Barman. All rights reserved. (<a href="http://www.debashisbarman.in" target="_blank">Webmaster</a>)</small>
 </footer>
 
+</div>
 </div>
 
 </div>
